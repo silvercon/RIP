@@ -13,12 +13,20 @@ public class Cpdetector {
 
     public static void main(String[] args) {
         encodingDetector(
-            "/Users/silver/Documents/Attendance/2018-08-07-11.txt");
+            "/Users/silver/Documents/Attendance/2018-08-09-11.txt");
     }
 
+    /**
+     * 探测文本的编码格式
+     * @param path
+     * @return encoding
+     * @create: 2018年8月8日 上午10:46:37 silver
+     * @history:
+     */
     @SuppressWarnings({ "deprecation", "static-access" })
     public static String encodingDetector(String path) {
         String encoding = null;
+
         /*------------------------------------------------------------------------  
         detector是探测器，它把探测任务交给具体的探测实现类的实例完成。  
         cpDetector内置了一些常用的探测实现类，这些探测实现类的实例可以通过add方法  
