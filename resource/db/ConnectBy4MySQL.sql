@@ -1,4 +1,4 @@
---查询部门树结构
+-- 查询部门树结构
 --  thf_department(code, parent_code)
 --  @param：departmentCode：部门编号
 --  @param：direction：1查询上级部门/2查询下级部门
