@@ -1,7 +1,5 @@
 package com.Thread;
 
-import java.lang.management.ManagementFactory;
-
 public class ThreadStatus implements Runnable {
 
     /*
@@ -34,11 +32,6 @@ public class ThreadStatus implements Runnable {
             e.printStackTrace();
         }
 
-    }
-
-    public static String pid() {
-        String name = ManagementFactory.getRuntimeMXBean().getName();
-        return name.split("@")[0];
     }
 
     public static void runnable() {
@@ -99,15 +92,22 @@ public class ThreadStatus implements Runnable {
         /*
          * 新建状态（NEW）：新创建了一个线程对象。
          */
-        ThreadStatus threadStatus = new ThreadStatus();
-        Thread thread1 = new Thread(threadStatus);
-        System.out.println(thread1.getState());
+        // ThreadStatus threadStatus = new ThreadStatus();
+        // Thread thread1 = new Thread(threadStatus);
+        // System.out.println(thread1.getState());
 
         /*
          * 调用start()方法后，调度程序开始调用线程，如果被调用则执行run()方法并进入RUNNABLE状态，
          * 否则进入TIMED_WAITING状态。
          */
-        thread1.start();
+        // thread1.start();
 
+        /*
+         * 重现线程的四种状态。
+         */
+        // runnable();// RUNNABLE
+        // blocked();// BLOCKED
+        // timedWaiting();//TIMED_WAITING
+        // waiting();// WAITING
     }
 }

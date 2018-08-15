@@ -1,22 +1,20 @@
 package com.Thread;
 
 public class RunnableThread implements Runnable {
+    int count = 1;
 
     @Override
     public void run() {
-        int count = 10;
-
-        while (count > 0) {
-            System.out
-                .println(Thread.currentThread().getName() + ": " + count--);
-        }
+        System.out.println(Thread.currentThread().getName() + ": " + count++);
     }
 
     public static void main(String args[]) {
-        RunnableThread runnableThread1 = new RunnableThread();
-        RunnableThread runnableThread2 = new RunnableThread();
+        /*---------------------------------------------------
+         * Runnable线程可共享线程资源
+         ---------------------------------------------------*/
+        RunnableThread runnableThread = new RunnableThread();
 
-        new Thread(runnableThread1).start();
-        new Thread(runnableThread2).start();
+        new Thread(runnableThread).start();
+        new Thread(runnableThread).start();
     }
 }
