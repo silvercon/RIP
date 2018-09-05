@@ -1,5 +1,5 @@
 
-public class readme {
+public class ex {
 
     /**
      * 包目录
@@ -14,4 +14,6 @@ public class readme {
     // com.ex04:PV操作相关
 
     // com.ex05:正则表达式
+
+    // com.ex06:随机数
 }
