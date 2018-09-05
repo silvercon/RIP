@@ -4,6 +4,31 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class DateUtil {
+    public static final String DB_DATE_FORMAT_STRING = "yyyyMMdd";
+
+    public static final String FRONT_DATE_FORMAT_STRING = "yyyy-MM-dd";
+
+    public static final String DATA_TIME_PATTERN_1 = "yyyy-MM-dd HH:mm:ss";
+
+    public static final String DATA_TIME_PATTERN_2 = "yyyy-MM-dd HH:mm";
+
+    public static final String DATA_TIME_PATTERN_3 = "yyyyMMDDhhmmss";
+
+    public static final String DATA_TIME_PATTERN_4 = "yyyyMMDDhhmmss";
+
+    public static final String DATA_TIME_PATTERN_5 = "yyyyMMddHHmmssSSS";
+
+    public static final String DATA_TIME_PATTERN_6 = "yyyy年MM月dd日";
+
+    public static final String DATA_TIME_PATTERN_7 = "HH:mm";
+
+    public static final String DATA_TIME_PATTERN_8 = "yyyy-MM-dd%HH:mm:ss";
+
+    public static final String TIME_BEGIN = " 00:00:00";
+
+    public static final String TIME_MIDDLE = " 12:00:00";
+
+    public static final String TIME_END = " 23:59:59";
 
     /**
      * 将字符串按照pattern格式转化为日期

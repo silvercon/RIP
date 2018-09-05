@@ -9,7 +9,7 @@ import java.net.URLConnection;
 import java.util.List;
 import java.util.Map;
 
-class HttpRequest {
+class Request {
     /**
      * 向指定URL发送GET方法的请求
      * @param url 发送请求的URL
@@ -139,7 +139,7 @@ public class HttpSender {
         // System.out.println(s);
 
         // 发送 POST 请求
-        String sr = HttpRequest.sendPost("https://feat.aijmu.com/getfeature",
+        String sr = Request.sendPost("https://feat.aijmu.com/getfeature",
             "");
         System.out.println(sr);
     }
