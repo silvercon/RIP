@@ -42,9 +42,3 @@ send "${tomcat_path}/bin/startup.sh\r"
 expect "*#"
 send "exit\r"
 
-
-
-
-
-
-
