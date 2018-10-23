@@ -61,11 +61,20 @@ select right('foobarbar', 5) from dual;
 
 
 -- substring
---  返回字符串的子串，从1开始。
+--  返回position后的子串，从1开始。
 --  @usage: substring(str, position);
 --  @param: str字符串
 --  @param: position子串起始位置
 select substring('Quadratically',5) from dual;
+
+
+-- substr
+--  返回position后长度为length的子串，从1开始。
+--  @usage: substring(str, position, length);
+--  @param: str字符串
+--  @param: position子串起始位置
+--  @param: length子串长度
+select substr('Quadratically',5, 5) from dual;
 
 
 -- repeat
